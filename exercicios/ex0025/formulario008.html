@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usando output</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif
+    }
+  </style>
 </head>
 <body>
   
@@ -25,6 +30,16 @@
 
       <label for="iresult">Soma:</label>
       <output id="iresult" name="result">
+        0
+      </output>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Range com output</legend>
+
+      <label for="isat">Nota do atendimento:</label>
+      <input type="range" name="" min="1" max="10" id="isat" oninput="inota.innerHTML = Number(isat.value)">
+      <output id="inota">
         0
       </output>
     </fieldset>
