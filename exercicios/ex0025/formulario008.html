@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usando output</title>
+</head>
+<body>
+  
+  <form action="">
+    <fieldset>
+      <legend>Somando números</legend>
+
+      <div>
+        <label for="inum1">Digite um número:</label>
+        <input type="number" name="n2" id="inum1"
+        oninput="iresult.innerHTML = Number(inum1.value) + Number(inum2.value)">
+      </div><br>
+
+      <div>
+        <label for="inum2">Digite outro número:</label>
+        <input type="number" name="n2" id="inum2"
+        oninput="iresult.innerHTML = Number(inum1.value) + Number(inum2.value)">
+      </div>
+
+      <label for="iresult">Soma:</label>
+      <output id="iresult" name="result">
+        0
+      </output>
+    </fieldset>
+  </form>
+
+</body>
+</html>
