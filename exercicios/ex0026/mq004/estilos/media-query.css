@@ -1,0 +1,44 @@
+
+/* Estilos gerais */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: black url('../imagens/back-tablet.jpg') top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #smartphone { display: none; }
+  #tablet { display: block; }
+  #pc { display: none; }
+  #tv { display: none; }
+  #impressora { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background: black url('../imagens/back-pc.jpg') top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #smartphone { display: none; }
+  #tablet { display: none; }
+  #pc { display: block; }
+  #tv { display: none; }
+  #impressora { display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: black url('../imagens/back-tv.jpg') top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #smartphone { display: none; }
+  #tablet { display: none; }
+  #pc { display: none; }
+  #tv { display: block; }
+  #impressora { display: none; }
+}
