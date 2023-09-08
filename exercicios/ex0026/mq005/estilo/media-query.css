@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 762px) {
+  .material-icons {
+    display: none;
+  }
+
+  #options {
+    display: block;
+  }
+
+  #options > ul > li {
+    display: inline-block
+  }
+}
